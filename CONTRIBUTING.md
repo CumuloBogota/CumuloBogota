@@ -53,7 +53,7 @@ Seguramente querrás ver como afectan tus cambios al resultado final, por lo que
 
 - Arch Linux: `sudo pacman -S code git ruby` 
 - Debian: `sudo apt-get install git ruby-full` 
-- Mint: `` 
+- Mint: `sudo apt install ruby` 
 - Ubuntu: `sudo apt-get install git ruby-full` 
 
 **Android** 
@@ -71,7 +71,7 @@ cd Cumulo-Web-Bogota
 ```
 también será necesario correr
 ```bash
-gem install bundler jekyll
+sudo gem install bundler jekyll
 ```
 una vez terminado corre el siguiente comando en el directorio del proyecto
 ```bash
