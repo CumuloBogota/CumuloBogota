@@ -1,0 +1,403 @@
+---
+layout: default
+title: Proyectos
+key: 4
+---
+
+{% include _include.html %}
+
+<!-- Site data -->
+{% assign content = site.data.proyectos %}
+
+<!-- Banner -->
+{% include banner.html
+  page_description = content.page_description
+%}
+
+<!-- Projects Section -->
+<section class="projects-section">
+  <div class="container">
+
+    <!-- Project 1 -->
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-status-badge in-progress">
+          <i class="fas fa-spinner"></i>
+          En Progreso - 65%
+        </div>
+        <h2 class="project-title">Observación y Análisis de Manchas Solares</h2>
+        <p class="project-description">
+          Proyecto de monitoreo continuo del Sol para registrar y analizar la actividad de manchas solares,
+          correlacionando los datos con el ciclo solar actual.
+        </p>
+      </div>
+
+      <div class="project-progress-bar">
+        <div class="progress-fill" style="width: 65%"></div>
+      </div>
+
+      <div class="project-content">
+        <div class="project-section">
+          <h3><i class="fas fa-tasks"></i> Avances del Proyecto</h3>
+          <div class="project-milestones">
+            <div class="milestone completed">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Fase 1: Adquisición de Equipo</strong>
+                <p>Telescopio solar con filtro H-alpha adquirido y calibrado</p>
+              </div>
+            </div>
+            <div class="milestone completed">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Fase 2: Protocolo de Observación</strong>
+                <p>Establecimiento de metodología y frecuencia de observaciones</p>
+              </div>
+            </div>
+            <div class="milestone active">
+              <i class="fas fa-circle-notch"></i>
+              <div>
+                <strong>Fase 3: Recolección de Datos</strong>
+                <p>Llevamos 3 meses de observaciones diarias documentadas</p>
+              </div>
+            </div>
+            <div class="milestone pending">
+              <i class="fas fa-circle"></i>
+              <div>
+                <strong>Fase 4: Análisis y Publicación</strong>
+                <p>Análisis estadístico y preparación de artículo divulgativo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-images"></i> Galería del Proyecto</h3>
+          <div class="project-gallery">
+            <img src="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=600&h=400&fit=crop"
+              alt="Telescopio solar">
+            <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=600&h=400&fit=crop"
+              alt="Mancha solar observada">
+            <img src="https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?w=600&h=400&fit=crop"
+              alt="Equipo trabajando">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
+              alt="Análisis de datos">
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-book"></i> Recursos de Investigación</h3>
+          <div class="resources-list">
+            <a href="#" class="resource-item">
+              <i class="fas fa-file-pdf"></i>
+              <span>Protocolo de Observación Solar (PDF)</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-file-excel"></i>
+              <span>Base de Datos de Observaciones (Excel)</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-link"></i>
+              <span>NOAA Space Weather Prediction Center</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-link"></i>
+              <span>Solar Dynamics Observatory (SDO)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-users"></i> Equipo del Proyecto</h3>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>María González</h4>
+              <p>Líder del Proyecto</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Carlos Ramírez</h4>
+              <p>Análisis de Datos</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Ana Martínez</h4>
+              <p>Observaciones</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Pedro Silva</h4>
+              <p>Documentación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-status-badge in-progress">
+          <i class="fas fa-spinner"></i>
+          En Progreso - 40%
+        </div>
+        <h2 class="project-title">Catálogo Fotográfico del Cielo Nocturno Colombiano</h2>
+        <p class="project-description">
+          Creación de un atlas fotográfico de constelaciones y objetos celestes visibles desde diferentes
+          regiones de Colombia, promoviendo el patrimonio astronómico nacional.
+        </p>
+      </div>
+
+      <div class="project-progress-bar">
+        <div class="progress-fill" style="width: 40%"></div>
+      </div>
+
+      <div class="project-content">
+        <div class="project-section">
+          <h3><i class="fas fa-tasks"></i> Avances del Proyecto</h3>
+          <div class="project-milestones">
+            <div class="milestone completed">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Planificación y Diseño</strong>
+                <p>Selección de ubicaciones y objetos celestes a fotografiar</p>
+              </div>
+            </div>
+            <div class="milestone active">
+              <i class="fas fa-circle-notch"></i>
+              <div>
+                <strong>Expediciones Fotográficas</strong>
+                <p>Completadas 3 de 8 expediciones planificadas</p>
+              </div>
+            </div>
+            <div class="milestone pending">
+              <i class="fas fa-circle"></i>
+              <div>
+                <strong>Post-procesamiento</strong>
+                <p>Edición y catalogación de imágenes</p>
+              </div>
+            </div>
+            <div class="milestone pending">
+              <i class="fas fa-circle"></i>
+              <div>
+                <strong>Publicación Digital</strong>
+                <p>Lanzamiento del catálogo interactivo en línea</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-images"></i> Galería del Proyecto</h3>
+          <div class="project-gallery">
+            <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&h=400&fit=crop"
+              alt="Vía Láctea desde Los Llanos">
+            <img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=600&h=400&fit=crop"
+              alt="Constelación de Orión">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&h=400&fit=crop"
+              alt="Expedición nocturna">
+            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&h=400&fit=crop"
+              alt="Equipo fotográfico">
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-book"></i> Recursos de Investigación</h3>
+          <div class="resources-list">
+            <a href="#" class="resource-item">
+              <i class="fas fa-file-pdf"></i>
+              <span>Guía de Astrofotografía (PDF)</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Mapa de Ubicaciones Visitadas</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-link"></i>
+              <span>Stellarium - Planetario Software</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-link"></i>
+              <span>Light Pollution Map Colombia</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-users"></i> Equipo del Proyecto</h3>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Camila Torres</h4>
+              <p>Coordinadora General</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Andrés López</h4>
+              <p>Fotógrafo Principal</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Laura Jiménez</h4>
+              <p>Post-producción</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Diego Moreno</h4>
+              <p>Logística de Expediciones</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Sofía Ruiz</h4>
+              <p>Catalogación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-status-badge completed">
+          <i class="fas fa-check"></i>
+          Completado
+        </div>
+        <h2 class="project-title">Taller de Astronomía para Colegios Públicos</h2>
+        <p class="project-description">
+          Programa educativo que llevó talleres interactivos de astronomía a 15 instituciones educativas
+          públicas, beneficiando a más de 800 estudiantes.
+        </p>
+      </div>
+
+      <div class="project-progress-bar">
+        <div class="progress-fill completed" style="width: 100%"></div>
+      </div>
+
+      <div class="project-content">
+        <div class="project-section">
+          <h3><i class="fas fa-chart-line"></i> Resultados del Proyecto</h3>
+          <div class="project-stats">
+            <div class="stat-box">
+              <i class="fas fa-school"></i>
+              <h4>15</h4>
+              <p>Colegios Visitados</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-users"></i>
+              <h4>850+</h4>
+              <p>Estudiantes Beneficiados</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <h4>45</h4>
+              <p>Talleres Realizados</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-star"></i>
+              <h4>4.9/5</h4>
+              <p>Calificación Promedio</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-images"></i> Galería del Proyecto</h3>
+          <div class="project-gallery">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop"
+              alt="Taller en colegio">
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop"
+              alt="Estudiantes participando">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop"
+              alt="Actividad práctica">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop"
+              alt="Observación con telescopio">
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-book"></i> Recursos Desarrollados</h3>
+          <div class="resources-list">
+            <a href="#" class="resource-item">
+              <i class="fas fa-file-pdf"></i>
+              <span>Manual del Facilitador (PDF)</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-file-pdf"></i>
+              <span>Cuadernillo para Estudiantes (PDF)</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-file-powerpoint"></i>
+              <span>Presentaciones Educativas (PPT)</span>
+            </a>
+            <a href="#" class="resource-item">
+              <i class="fas fa-file-pdf"></i>
+              <span>Informe Final del Proyecto (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3><i class="fas fa-users"></i> Equipo del Proyecto</h3>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Roberto Sánchez</h4>
+              <p>Director del Programa</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Valentina Castro</h4>
+              <p>Coordinadora Pedagógica</p>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h4>Equipo de Facilitadores</h4>
+              <p>12 miembros activos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>¿Tienes una idea para un proyecto?</h2>
+      <p>En Cúmulo siempre estamos buscando nuevas iniciativas de investigación y divulgación</p>
+      <a href="unete.html" class="btn-hero">
+        <span>Propón tu Proyecto</span>
+        <i class="fas fa-lightbulb"></i>
+      </a>
+    </div>
+  </div>
+</section>

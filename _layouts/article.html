@@ -1,0 +1,216 @@
+---
+---
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/styles/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  {% include _include.html %}
+
+  <!-- Header -->
+  {% include header.html %}
+
+  <!-- Article Header -->
+  <article class="blog-post">
+    <div class="blog-post-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="{{ home.url | relative_url }}">{{ home.title }}</a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="{{ blog.url | relative_url }}">{{ blog.title }}</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>{{ page.title }}</span>
+        </div>
+
+        <div class="post-category-badge">{{ page.category }}</div>
+
+        <h1 class="post-title">{{ page.title }}</h1>
+
+        <div class="post-author-section">
+          <div class="author-card">
+            <img src={{ page.author_picture }}
+                 alt="{{ page.author }}" class="author-image">
+            <div class="author-details">
+              <h3 class="author-name-large">{{ page.author }}</h3>
+              <p class="author-bio">{{ page.author_profile }}</p>
+              <div class="post-metadata">
+                <span><i class="fas fa-calendar"></i>{{ page.publish_date }}</span>
+                <span><i class="fas fa-clock"></i>{{ page.read_time }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Image -->
+    <div class="post-featured-image">
+      <img src="{{ page.featured_image }}"
+           alt="{{ page.featured_image_description }}">
+      <div class="image-caption">{{ page.featured_image_description }}</div>
+    </div>
+
+    <!-- Article Content -->
+    <div class="container">
+      <div class="post-content-wrapper">
+        <div class="post-content">
+
+          {{ content }}
+
+          <div class="content-highlight success">
+            <i class="fas fa-rocket"></i>
+            <div>
+              <h4>Para Saber Más</h4>
+              <p>(Not modular) Si te interesa seguir de cerca los descubrimientos del JWST, te recomendamos visitar el sitio oficial
+                de la NASA y el Space Telescope Science Institute, donde publican regularmente las nuevas imágenes y
+                resultados científicos.</p>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="post-tags">
+            <h4>Etiquetas:</h4>
+            {% for tag in page.tags %}
+              <a href="#" class="tag">{{ tag }}</a>
+            {% endfor %}
+          </div>
+
+          <!-- Share Buttons -->
+          <div class="post-share">
+            <h4>Compartir artículo:</h4>
+            <div class="share-buttons">
+              <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- Author Bio -->
+          <div class="author-bio-box">
+            <img src="https://ui-avatars.com/api/?name=Maria+Rodriguez&background=5054AF&color=fff&size=100"
+              alt="María Rodríguez" class="bio-avatar">
+            <div class="bio-content">
+              <h4>Sobre la Autora</h4>
+              <h3>María Rodríguez</h3>
+              <p>María es estudiante de Física en la Universidad Nacional y miembro activo de Cúmulo desde 2024. Se
+                especializa en astrofísica observacional y le apasiona la divulgación científica. En su tiempo libre
+                disfruta de la observación astronómica amateur y la astrofotografía.</p>
+              <div class="author-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="post-sidebar">
+
+          <!-- Table of Contents -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">En este artículo</h3>
+            <ul class="toc-list">
+              <li><a href="#intro">Introducción</a></li>
+              <li><a href="#observatorio">Un Observatorio Sin Precedentes</a></li>
+              <li><a href="#descubrimientos">Descubrimientos Revolucionarios</a></li>
+              <li><a href="#implicaciones">Implicaciones Para la Ciencia</a></li>
+              <li><a href="#futuro">El Futuro de las Observaciones</a></li>
+              <li><a href="#conclusion">Conclusión</a></li>
+            </ul>
+          </div>
+
+          <!-- Related Posts -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Artículos Relacionados</h3>
+            <div class="related-posts">
+              <a href="blog-post-3.html" class="related-post-item">
+                <img src="https://images.unsplash.com/photo-1608889335941-32ac5f2041b9?w=100&h=100&fit=crop"
+                  alt="Agujero Negro">
+                <div>
+                  <h4>Paradoja de la Información</h4>
+                  <span>10 Ene 2026</span>
+                </div>
+              </a>
+              <a href="blog-post-4.html" class="related-post-item">
+                <img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=100&h=100&fit=crop"
+                  alt="Marte">
+                <div>
+                  <h4>Misiones a Marte 2026</h4>
+                  <span>5 Ene 2026</span>
+                </div>
+              </a>
+              <a href="blog-post-2.html" class="related-post-item">
+                <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=100&h=100&fit=crop"
+                  alt="Vía Láctea">
+                <div>
+                  <h4>Fotografiar la Vía Láctea</h4>
+                  <span>15 Ene 2026</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- CTA Widget -->
+          <div class="sidebar-widget cta-widget">
+            <i class="fas fa-users"></i>
+            <h3>Únete a Cúmulo</h3>
+            <p>Escribe artículos como este y comparte tu pasión por la astronomía</p>
+            <a href="{{ join_us.url }}" class="btn-primary">Más Información</a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </article>
+
+  <!-- Call to Action -->
+  <section class="blog-cta">
+    <div class="container">
+      <div class="blog-cta-content">
+        <div class="cta-icon">
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+        <h2>¿Quieres Participar en Nuestro Blog?</h2>
+        <p>Si eres miembro de Cúmulo y te apasiona escribir sobre astronomía, ¡nos encantaría publicar tus artículos!
+        </p>
+        <a href="{{ join_us.url }}" class="btn-hero">
+          <span>{{ join_us.title }}</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <!-- JavaScript -->
+  <script src="{{ '/scripts/script.js' | relative_url }}"></script>
+</body>
+
+</html>

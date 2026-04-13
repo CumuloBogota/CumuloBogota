@@ -1,0 +1,75 @@
+---
+layout: default
+title: Telescopios
+key: 3
+---
+
+{% include _include.html %}
+
+<!-- Site data -->
+{% assign content = site.data.telescopios %}
+
+<!-- Banner -->
+{% include banner.html
+  page_description = content.page_description
+%}
+
+<!-- Content -->
+
+<div class="section-intro">
+  <p class="intro-text">
+    <i class="fas fa-star-and-crescent"></i>
+    {{ content.objective }}
+  </p>
+</div>
+
+<h2>¿Cuáles son nuestros planes para este semestre?</h2>
+<p>Durante el semestre académico 2026-1S estaremos llevando a cabo dos eventos de gran interés para todos los
+  aficionados al espacio</p>
+<article class="reading-session">
+  <h3>Gran Noche de Observación Nocturna</h3>
+  <img src="pending" alt="Poster">
+  La noche del Lunes 2 de Marzo será una que no podrás olvidar, ven con nosotros al Estadio Alfonso López Pumarejo de
+  la
+  Universidad Nacional de Colombia para disfrutar de una noche llena de astronomía donde podrás aprender sobre
+  observación visual, observar por telescopios, manejar mapas estelares y mucho más! No te lo pierdas pues culminará
+  con
+  un **Eclipse Lunar Total** en la madrugada del Martes 3 de Marzo.
+</article>
+
+<article class="reading-session">
+  <h3>Observación continua de los 101 Objetos Messier</h3>
+  <p>El Catálogo Messier es una lista de 110 objetos astronómicos confeccionada por el astrónomo francés Charles
+    Messier
+    y publicada originalmente entre 1774 y 1781. <a
+      href="https://es.wikipedia.org/wiki/Cat%C3%A1logo_Messier">Wikipedia</a> Y durante este año 2026 estaremos
+    intentando observarlos y capturarlos todos en hermosas astrofotografías que serán exhibidas aquí una vez culmine
+    el
+    proyecto.</p>
+</article>
+
+<h2>Aprende con nosotros</h2>
+<p>También realizamos capacitaciones de telescopios, talleres de Stellarium, carta celeste y astrofotografía, las
+  actividades que organicemos las podrás encontrar en nuestras redes sociales, ¡síguenos!</p>
+<!-- 
+  Adjuntar tres imágenes en tres columnas
+  1. Capacitaciones de telescopios
+  2. Stellarium/Carta celeste
+  3. Astrofotografía
+-->
+
+<h2>Recursos</h2>
+Estas herramientas te servirán para poder realizar mejores observaciones del cielo nocturno, ya sea visual o con
+instrumentos
+<ul>
+  <li>Link a Stellarium</li>
+  <li>Link a los mapas de Norton (Norton Star Atlas)</li>
+  <li>Diagrama de medir ángulos con las manos</li>
+  <li>Calculadora de tiempo de exposición</li>
+  <li>Calculadora de campo de visión (field of view)</li>
+  <li>Estos son algunos objetos que podrás observar esta noche</li>
+  <!-- Los últimos tres requieren su implementación en JavaScript -->
+</ul>
+
+<!-- Maybe this? -->
+<!-- Request an observation? You and your friends wanna observe the night sky with professional telescopes? Contact us and let's meet for it -->

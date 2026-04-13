@@ -1,0 +1,54 @@
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <h3 class="footer-title">Cúmulo</h3>
+        <p class="footer-text">
+          Semillero de Astronomía dedicado a la divulgación científica y el aprendizaje colaborativo sobre el
+          universo.
+        </p>
+        <div class="footer-social">
+          <a href="{{ site.facebook }}" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="{{ site.instagram }}" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="{{ site.twitter }}" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="{{ site.youtube }}" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-title">Enlaces Rápidos</h3>
+        <ul class="footer-links">
+          <li><a href="{{ home.url | relative_url }}">{{ home.title }}</a></li>
+          <li><a href="{{ activities.url | relative_url }}">{{ activities.title }}</a></li>
+          <li><a href="{{ club.url | relative_url }}">{{ club.title }}</a></li>
+          <li><a href="{{ telescopes.url | relative_url }}">{{ telescopes.title }}</a></li>
+          <li><a href="{{ projects.url | relative_url }}">{{ projects.title }}</a></li>
+          <li><a href="{{ store.url | relative_url }}">{{ store.title }}</a></li>
+          <li><a href="{{ blog.url | relative_url }}">{{ blog.title }}</a></li>
+          <li><a href="{{ join_us.url | relative_url }}">{{ join_us.title }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-title">Contacto</h3>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>{{ site.email }}</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Bogotá, Colombia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 Cúmulo - Semillero de Astronomía. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

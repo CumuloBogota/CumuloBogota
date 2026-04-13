@@ -1,0 +1,47 @@
+<section class="featured-article">
+  <div class="container">
+    <div class="featured-badge">
+      <i class="fas fa-star"></i>
+      <span>Artículo Destacado</span>
+    </div>
+
+    <article class="featured-post">
+      <div class="featured-post-image">
+        <img src={{ include.cont.featured_image }} alt={{ include.cont.featured_image_description }}>
+        <div class="featured-category">{{ include.cont.category }}</div>
+      </div>
+      <div class="featured-post-content">
+        <div class="post-meta">
+          <div class="author-info">
+            <img src={{ include.cont.author_picture }}
+            alt={{ include.cont.author_name }} class="author-avatar">
+            <div>
+              <span class="author-name">{{ include.cont.author }}</span>
+              <span class="post-date"><i class="fas fa-calendar"></i> {{ include.cont.publish_date }}</span>
+            </div>
+          </div>
+          <div class="post-stats">
+            <span><i class="fas fa-clock"></i>{{ include.cont.read_time }}</span>
+          </div>
+        </div>
+
+        <h2 class="featured-post-title">
+          <a href="blog-post-1.html">{{ include.cont.title }}</a>
+        </h2>
+
+        <p class="featured-post-excerpt">{{ include.cont.excerpt }}</p>
+
+        <div class="featured-post-tags">
+          {% for tag in include.cont.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+
+        <a href="{{ include.cont.url | relative_url }}" class="btn-read-more">
+          Leer Artículo Completo
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>

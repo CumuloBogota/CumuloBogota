@@ -1,0 +1,231 @@
+---
+layout: default
+title: Astrochaza
+key: 5
+---
+
+{% include _include.html %}
+
+<!-- Site data -->
+{% assign content = site.data.astrochaza %}
+
+<!-- Banner -->
+{% include banner.html
+  page_description = content.page_description
+%}
+
+<!-- Catalog Embed Section -->
+<section class="catalog-embed-section">
+  <div class="container">
+    <div class="embed-intro">
+      <h2>Explora Nuestro Catálogo Completo</h2>
+      <p>Descubre todos nuestros productos astronómicos en un solo lugar</p>
+    </div>
+
+    <!-- Botón alternativo para abrir catálogo -->
+    <div class="catalog-cta">
+      <a href="http://tiny.cc/CatalogoAstrochaza" target="_blank" class="btn-catalog">
+        <i class="fas fa-external-link-alt"></i>
+        Abrir Catálogo Completo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="products-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title-dark">Productos Destacados</h2>
+      <p class="section-subtitle-dark">Una selección de nuestros productos más populares</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-badge">Más Vendido</div>
+        <div class="product-image">
+          <!-- Reemplaza con imagen real del producto -->
+          <img src="https://images.unsplash.com/photo-1581088686144-0d9e2446ba8b?w=500&h=500&fit=crop"
+            alt="Telescopio Refractor">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Telescopio Refractor 70mm</h3>
+          <p class="product-description">Ideal para principiantes. Incluye trípode ajustable y accesorios.</p>
+          <div class="product-price">
+            <span class="price">$450.000</span>
+            <span class="old-price">$550.000</span>
+          </div>
+          <button class="btn-add-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Consultar
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-aos-delay="100">
+        <div class="product-badge new">Nuevo</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?w=500&h=500&fit=crop"
+            alt="Binoculares Astronómicos">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Binoculares 10x50</h3>
+          <p class="product-description">Perfectos para observación de objetos celestes de gran campo.</p>
+          <div class="product-price">
+            <span class="price">$280.000</span>
+          </div>
+          <button class="btn-add-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Consultar
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" data-aos-delay="200">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&h=500&fit=crop"
+            alt="Mapa Estelar">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Mapa Estelar Rotativo</h3>
+          <p class="product-description">Planisferio celeste para identificar constelaciones todo el año.</p>
+          <div class="product-price">
+            <span class="price">$35.000</span>
+          </div>
+          <button class="btn-add-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Consultar
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=500&h=500&fit=crop"
+            alt="Filtro Solar">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Filtro Solar para Telescopio</h3>
+          <p class="product-description">Observa el Sol de manera segura. Compatible con varios modelos.</p>
+          <div class="product-price">
+            <span class="price">$120.000</span>
+          </div>
+          <button class="btn-add-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Consultar
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card" data-aos-delay="100">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500&h=500&fit=crop"
+            alt="Lámpara de luz roja">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Lámpara de Luz Roja</h3>
+          <p class="product-description">Mantén tu visión nocturna durante las observaciones.</p>
+          <div class="product-price">
+            <span class="price">$45.000</span>
+          </div>
+          <button class="btn-add-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Consultar
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card" data-aos-delay="200">
+        <div class="product-badge">Oferta</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?w=500&h=500&fit=crop"
+            alt="Set de Oculares">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Set de 4 Oculares</h3>
+          <p class="product-description">Diferentes aumentos para todas tus necesidades de observación.</p>
+          <div class="product-price">
+            <span class="price">$190.000</span>
+            <span class="old-price">$250.000</span>
+          </div>
+          <button class="btn-add-cart">
+            <i class="fas fa-shopping-cart"></i>
+            Consultar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories-section">
+  <div class="container">
+    <h2 class="section-title-dark">Categorías</h2>
+    <div class="categories-grid">
+      <div class="category-card">
+        <div class="category-icon">
+          <i class="fas fa-telescope"></i>
+        </div>
+        <h3>Telescopios</h3>
+        <p>Refractores, reflectores y catadióptricos</p>
+      </div>
+      <div class="category-card" data-aos-delay="100">
+        <div class="category-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3>Libros</h3>
+        <p>Guías, atlas y literatura astronómica</p>
+      </div>
+      <div class="category-card" data-aos-delay="200">
+        <div class="category-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3>Accesorios</h3>
+        <p>Oculares, filtros, monturas y más</p>
+      </div>
+      <div class="category-card" data-aos-delay="300">
+        <div class="category-icon">
+          <i class="fas fa-tshirt"></i>
+        </div>
+        <h3>Merchandising</h3>
+        <p>Camisetas, tazas y artículos de Cúmulo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact for Orders -->
+<section class="order-contact-section">
+  <div class="container">
+    <div class="order-contact-box">
+      <div class="contact-icon">
+        <i class="fas fa-comments"></i>
+      </div>
+      <div class="contact-content">
+        <h3>¿Listo para hacer tu pedido?</h3>
+        <p>Contáctanos por WhatsApp, Instagram o email para consultar disponibilidad y realizar tu compra</p>
+      </div>
+      <div class="contact-buttons">
+        <a href="https://wa.me/TU_NUMERO" target="_blank" class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp
+        </a>
+        <a href="https://instagram.com/TU_INSTAGRAM" target="_blank" class="btn-instagram">
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </a>
+        <a href="/cdn-cgi/l/email-protection#5d3c2e292f323e353c273c1d3e2830283132733e3230" class="btn-email">
+          <i class="fas fa-envelope"></i>
+          Email
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

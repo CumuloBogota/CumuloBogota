@@ -1,0 +1,30 @@
+<article class="blog-card">
+  <div class="blog-card-image">
+    <img src="{{ include.article.featured_image }}" alt="{{ include.article.featured_image_description }}">
+    <div class="blog-category">{{ include.article.category }}</div>
+  </div>
+  <div class="blog-card-content">
+    <div class="blog-meta">
+      <div class="author-mini">
+        <img src="{{ include.article.author_picture }}" alt="{{ include.article.author }}">
+        <span>{{ include.article.author }}</span>
+      </div>
+      <span class="blog-date">{{ include.article.publish_date }}</span>
+    </div>
+
+    <h3 class="blog-card-title">
+      <a href="blog-post-3.html">{{ include.article.title }}</a>
+    </h3>
+
+    <p class="blog-card-excerpt">
+      {{ include.article.excerpt }}
+    </p>
+
+    <div class="blog-card-footer">
+      <span class="read-time"><i class="fas fa-clock"></i>{{ include.article.read_time }}</span>
+      <a href="{{ include.article.url | relative_url }}" class="read-more-link">
+        Leer más <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</article>

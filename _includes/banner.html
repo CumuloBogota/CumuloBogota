@@ -1,0 +1,17 @@
+<section class="page-header">
+  <div class="page-header-bg">
+    <div class="stars"></div>
+    <div class="stars-2"></div>
+  </div>
+  <div class="container">
+    <div class="page-header-content">
+      <h1 class="page-title">{{ page.title }}</h1>
+      <p class="page-subtitle">{{ include.page_description }}</p>
+      <div class="breadcrumb">
+        <a href="{{ home.url | relative_url }}">{{ home.title }}</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>{{ page.title }}</span>
+      </div>
+    </div>
+  </div>
+</section>

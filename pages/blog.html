@@ -1,0 +1,62 @@
+---
+layout: default
+title: Blog
+key: 6
+feat: test
+recent: [test]
+---
+
+{% include _include.html %}
+
+<!-- Site data -->
+{% assign content = site.data.blog %}
+
+<!-- Banner -->
+{% include banner.html
+  page_description = content.page_description
+%}
+
+<!-- Featured Article -->
+{% assign featured = site.articles | where: "slug", "test" | first %}
+{% include article-preview.html cont=featured %}
+
+<!-- Blog Grid -->
+<section class="blog-grid">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Artículos Recientes</h2>
+      <p class="section-subtitle">Explorando el universo una publicación a la vez</p>
+    </div>
+
+    <div class="blog-posts-grid">
+
+      {% for slugg in page.recent %}
+        {% assign article = site.articles | where: "slug", slugg | first %}
+        {% if article %}
+          {% include article-recent.html article = article %}
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="blog-cta">
+  <div class="container">
+    <div class="blog-cta-content">
+      <div class="cta-icon">
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+      <h2>¿Quieres Participar en Nuestro Blog?</h2>
+      <p>Si eres miembro de Cúmulo y te apasiona escribir sobre astronomía, ciencia y el universo, ¡nos encantaría
+        publicar tus artículos!</p>
+      <a href="{{ join_us.url | relative_url }}" class="btn-hero">
+        <span>{{ join_us.title }}</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <p class="cta-note">Los miembros del semillero pueden enviar sus artículos para publicación semanal o mensual
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<!-- Navigation Bar -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="{{ '/images/logo.png' | relative_url }}" alt="Cúmulo" class="logo-image">
+    </div>
+
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="{{ home.url | relative_url }}"       class="nav-link">{{ home.title }}</a></li>
+        <li><a href="{{ activities.url | relative_url }}" class="nav-link">{{ activities.title }}</a></li>
+        <li><a href="{{ club.url | relative_url }}"       class="nav-link">{{ club.title }}</a></li>
+        <li><a href="{{ telescopes.url | relative_url }}" class="nav-link">{{ telescopes.title }}</a></li>
+        <li><a href="{{ projects.url | relative_url }}"   class="nav-link">{{ projects.title }}</a></li>
+        <li><a href="{{ store.url | relative_url }}"      class="nav-link">{{ store.title }}</a></li>
+        <li><a href="{{ blog.url | relative_url }}"       class="nav-link">{{ blog.title }}</a></li>
+      </ul>
+    </div>
+
+    <a href="{{ join_us.url | relative_url }}" class="btn-primary nav-cta">{{ join_us.title }}</a>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
